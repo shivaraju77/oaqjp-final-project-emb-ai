@@ -21,6 +21,9 @@ def emot_detector():
     # Pass the text to the emotion_detector function and store the response
     emotions = emotion_detector(text_to_analyze)
 
+    if emotions['dominant_emotion'] == None:
+        return "Invalid text! Please try again"
+
     # Return a formatted string with the sentiment label and score
     return "For the given statement the system response is 'anger':{}, 'disgust':{}, \
 'fear':{}, 'joy':{}, and 'sadness':{}. The dominant emotion \
