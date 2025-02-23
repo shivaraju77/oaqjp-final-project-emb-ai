@@ -1,4 +1,4 @@
-''' This file contains a that function calls the Emotion Predict function of the Watson NLP Library to analyze text 
+''' This file contains a function that calls the Emotion Predict function of the Watson NLP Library to analyze text 
     for detecting emotions.
 '''
 # Import libraries
@@ -42,4 +42,3 @@ def emotion_detector(text_to_analyze):
         emotions['dominant_emotion'] = dominant_emotion
 
     return emotions
-
